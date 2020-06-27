@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Регулярные выражения</title>
+</head>
+<body>
+	<form action="http://e-learn.meximas.com/tr.php" method="post">
+		<label>Имя
+			<input type="text" pattern="[A-Za-z]{1,50}" name="title">
+		</label>
+		<br>
+		<label>Фамилия
+			<input type="text" pattern="[A-Za-z]{1,50}" name="title">
+		</label>
+		<br>
+		<label>Пол
+			<input type="radio" name="gender" value="male" checked> Мужской<br>
+			<input type="radio" name="gender" value="female"> Женский<br>
+			<input type="radio" name="gender" value="other"> Другой
+		</label>
+		<br>
+		<label>Номер телефона:7xxxxxxxxxx 
+			<input type="tel" pattern="7[0-9]{10}" name="Phone">
+		</label>
+		<br>
+		<label>E-mail
+			<select name="Email">
+				<option value="s1">gmail.com</option>
+				<option value="s2">mail.ru</option>
+				<option value="s3">yandex.ru</option>
+				<option value="s4">rambler.ru</option>
+			</select>
+		</label>
+		<br>
+		<label> День заезда
+			<input type="date" name="income" max="2020-06-27">
+		</label>
+		<br>
+		<label> День выезда
+			<input type="date" name="outcome" min="2020-06-27">
+		</label>
+		<br>
+		<label>Снилс
+			<input type="text" name="Snils" pattern="\d{4}-\d{4}\s\d\d">
+		</label>
+		<br>
+		<label>Количество гостей
+			<input type="text" name="Pers" pattern="[1-7]">
+		</label>
+		<br>
+		<label>Цвет фона
+			<input type="color" name="Invitation">
+		</label>
+		<br>
+		<label>ИНН
+			<input type="text" name="INN" pattern="\d{10}">
+		</label>
+		<br>
+		<label>Автономер
+			<input type="text" name="Carnumb" pattern="\D\d\d\d\D\D">
+		</label>
+		<br>
+		<input type="submit" name="submit">
+	</form>
+</body>
+</html>
+<html>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="main.css" />
+<body>
+<div class="container">
+<div class="top">Данные анкеты получены</div>
+<header class="clearfix">
+<h2>Welcome!!!!<br>
+<?php echo $_POST["name"]." ".$_POST["surname"]; ?><br>
+Будем рады видеть Вас <br>на выставке робототехники <br>
+
+Дата вашего заезда -<?php echo $_POST["date"]?>
+
+
+
+</nav>
+</header>
+<section>
+</body>
+</html>
